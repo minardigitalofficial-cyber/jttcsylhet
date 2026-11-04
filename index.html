@@ -1,12 +1,119 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./src/css/style.css" />
-  </head>
-  <body>
-    <p class="font-ador">Hello World! হ্যালো ওয়ার্ল্ড</p>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Jalalabad Teacher's Training College</title>
+        <link rel="stylesheet" href="./src/css/style.css" />
+    </head>
+    <body>
+        <!-- Navbar Section Start  -->
+        <header class="header bg-primary border-b border-white">
+            <div class="container mx-auto px-4 py-5">
+                <div
+                    class="flex items-center justify-between text-white text-center font-ador"
+                >
+                    <h3 class="text-lg sm:text-2xl">প্রশিক্ষণ মানে,</h3>
+                    <div>
+                        <img
+                            src="./src/images/logo.jpeg"
+                            class="size-20 sm:size-24"
+                            alt="Jalalabad Teacher's Training College Logo"
+                        />
+                    </div>
+                    <h3 class="text-lg sm:text-2xl">প্রকৃষ্টরূপে শিখন</h3>
+                </div>
+            </div>
+            <nav class="bg-secondary text-black py-3">
+                <div class="container mx-auto px-4">
+                    <!--
+                  1. Home,
+                  2. About Us, 
+                  3. Admission,
+                  4. Faculty Members,
+                  5. Notice, 
+                  6. Gallery
+                  7. Contact Us
+                  -->
+                    <ul
+                        class="nav-links flex flex-nowrap space-x-4 justify-center overflow-x-auto whitespace-nowrap"
+                        style="scrollbar-width: none; -ms-overflow-style: none"
+                    >
+                        <li>
+                            <a href="#" class="hover:text-primary-dark">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary-dark"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary-dark"
+                                >Admission</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary-dark"
+                                >Faculty Members</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary-dark"
+                                >Notice</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary-dark"
+                                >Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a href="#" class="hover:text-primary-dark"
+                                >Contact Us</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!-- Navbar Section end  -->
+
+        <!-- Hero Section Start -->
+        <section
+            class="hero-section relative flex min-h-120 items-center justify-center bg-cover bg-center px-4 py-20 text-center text-white sm:min-h-150"
+            style="
+                background-image: url(&quot;https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=2000&q=85&quot;);
+            "
+        >
+            <div class="absolute inset-0 bg-black/60" aria-hidden="true"></div>
+            <div class="hero-content relative z-10 mx-auto max-w-3xl">
+                <p class="mb-4 text-lg font-semibold sm:text-xl">
+                    Jalalabad Teacher's Training College
+                </p>
+                <h1 class="mb-5 text-3xl font-bold leading-tight sm:text-5xl">
+                    Shape the Future Through Quality Teacher Education
+                </h1>
+                <p class="mx-auto mb-8 max-w-2xl text-base sm:text-lg">
+                    Build your skills, inspire learners, and take the next step
+                    toward a rewarding career in education.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a
+                        href="#admission"
+                        class="rounded bg-secondary px-6 py-3 font-semibold text-black transition duration-300 ease-in-out hover:bg-white"
+                    >
+                        Admission
+                    </a>
+                    <a
+                        href="#contact"
+                        class="rounded border-2 border-white px-6 py-3 font-semibold text-white transition duration-300 ease-in-out hover:bg-white hover:text-black"
+                    >
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section end-->
+    </body>
 </html>
