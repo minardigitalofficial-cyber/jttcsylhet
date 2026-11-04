@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 @import "tailwindcss";
 
+@theme {
+  /* Brand Colors */
+  --color-primary: #176b3a;
+  --color-primary-dark: #124d2d;
+  --color-secondary: #f5d943;
+  --color-accent-red: #d92332;
+  --color-accent-blue: #0879c9;
+
+  /* Background Colors */
+  --color-bg-main: #ffffff;
+  --color-bg-light: #f4f6f5;
+  --color-bg-cream: #fff9df;
+  --color-bg-green: #eaf4e8;
+
+  /* Text Colors */
+  --color-text-primary: #263238;
+  --color-text-secondary: #647067;
+
+  /* UI Colors */
+  --color-border: #dce5dd;
+  --color-card-bg: #ffffff;
+}
+
 * {
   font-family: "Open Sans", sans-serif;
 }
