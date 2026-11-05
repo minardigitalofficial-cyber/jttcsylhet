@@ -12,85 +12,80 @@
         <link rel="stylesheet" href="./src/css/style.css" />
     </head>
     <body>
-        <header class="header border-b border-white bg-primary">
-            <div class="container mx-auto px-4 py-5">
+        <header
+            class="site-header bg-primary border-b border-white sticky top-0 z-50"
+        >
+            <div class="site-header-branding container mx-auto px-4 py-5">
                 <div
-                    class="flex items-center justify-between text-center text-white"
+                    class="flex items-center justify-between text-white text-center"
                 >
-                    <h3 class="font-ador text-lg sm:text-2xl">
+                    <h3 class="site-header-motto text-lg sm:text-2xl font-ador">
                         প্রশিক্ষণ মানে,
                     </h3>
-                    <a
-                        href="./index.html"
-                        aria-label="Jalalabad Teacher's Training College home"
-                    >
+                    <div>
                         <img
                             src="./src/images/logo.jpeg"
-                            class="size-20 sm:size-24"
+                            class="site-header-logo size-20 sm:size-24"
                             alt="Jalalabad Teacher's Training College Logo"
                         />
-                    </a>
-                    <h3 class="font-ador text-lg sm:text-2xl">
+                    </div>
+                    <h3 class="site-header-motto text-lg sm:text-2xl font-ador">
                         প্রকৃষ্ঠরুপে শিখন
                     </h3>
                 </div>
             </div>
-            <nav
-                class="bg-secondary py-3 text-black"
-                aria-label="Main navigation"
-            >
+            <nav class="bg-secondary text-black py-3">
                 <div class="container mx-auto px-4">
                     <ul
-                        class="nav-links flex flex-nowrap space-x-4 overflow-x-auto whitespace-nowrap sm:justify-center"
+                        class="nav-links flex flex-nowrap space-x-4 sm:justify-center overflow-x-auto whitespace-nowrap"
                         style="scrollbar-width: none; -ms-overflow-style: none"
                     >
                         <li>
                             <a
-                                href="./index.html"
-                                class="font-medium duration-300 hover:text-primary-dark"
+                                href="#"
+                                class="hover:text-primary-dark font-medium duration-300"
                                 >Home</a
                             >
                         </li>
                         <li>
                             <a
                                 href="./about.html"
-                                class="font-medium duration-300 hover:text-primary-dark"
-                                aria-current="page"
+                                class="hover:text-primary-dark font-medium duration-300"
                                 >About</a
                             >
                         </li>
                         <li>
                             <a
-                                href="./index.html#admission"
-                                class="font-medium duration-300 hover:text-primary-dark"
+                                href="#"
+                                class="hover:text-primary-dark font-medium duration-300"
                                 >Admission</a
                             >
                         </li>
                         <li>
                             <a
-                                href="./index.html#faculty"
-                                class="font-medium duration-300 hover:text-primary-dark"
+                                href="#"
+                                class="hover:text-primary-dark font-medium duration-300"
                                 >Faculty Members</a
                             >
                         </li>
                         <li>
                             <a
-                                href="./notice.html"
-                                class="font-medium duration-300 hover:text-primary-dark"
+                                href="#notices"
+                                class="hover:text-primary-dark font-medium duration-300"
                                 >Notice</a
                             >
                         </li>
                         <li>
                             <a
-                                href="./index.html#gallery"
-                                class="font-medium duration-300 hover:text-primary-dark"
+                                href="#"
+                                class="hover:text-primary-dark font-medium duration-300"
                                 >Gallery</a
                             >
                         </li>
                         <li>
                             <a
                                 href="./contact.html"
-                                class="font-medium duration-300 hover:text-primary-dark"
+                                class="hover:text-primary-dark font-medium duration-300"
                                 >Contact Us</a
                             >
                         </li>
@@ -975,87 +970,91 @@
             </div>
         </main>
 
+        <!-- Footer Start -->
         <footer class="bg-primary text-white">
             <div class="container">
                 <div
-                    class="flex flex-wrap gap-x-10 gap-y-5 py-10 md:flex-nowrap md:justify-between md:gap-0"
+                    class="flex flex-wrap md:flex-nowrap gap-x-10 gap-y-5 md:gap-0 md:justify-between py-10"
                 >
-                    <div class="flex flex-col">
+                    <div class="flex flex-col font-ador">
                         <img
                             src="./src/images/logo.jpeg"
-                            alt="Jalalabad Teacher's Training College Logo"
-                            class="w-20 object-contain"
+                            alt="Brand Logo"
+                            class="object-fill size-20"
                         />
-                        <p class="mt-5 font-ador text-xl font-semibold">
+                        <p class="font-semibold text-xl mt-5">
                             জালালাবাদ টিচার্স ট্রেনিং কলেজ
                         </p>
                         <p>সুদক্ষ সুশিক্ষক তৈরী আমাদের লক্ষ্য।</p>
                     </div>
                     <div class="flex flex-col gap-3">
-                        <h2 class="text-xl font-semibold">Useful Links</h2>
+                        <h2 class="text-xl font-semibold font-ador">
+                            Useful Links
+                        </h2>
                         <ul class="flex flex-col gap-2">
                             <li>
                                 <a
-                                    href="./index.html"
-                                    class="font-medium text-secondary duration-300 hover:text-white"
+                                    href="/"
+                                    class="font-medium text-secondary hover:text-white duration-300"
                                     >Home</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="./about.html"
-                                    class="font-medium text-secondary duration-300 hover:text-white"
-                                    aria-current="page"
+                                    href="/about.html"
+                                    class="font-medium text-secondary hover:text-white duration-300"
                                     >About</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="./index.html#admission"
-                                    class="font-medium text-secondary duration-300 hover:text-white"
+                                    href="/"
+                                    class="font-medium text-secondary hover:text-white duration-300"
                                     >Admission</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="./index.html#faculty"
-                                    class="font-medium text-secondary duration-300 hover:text-white"
-                                    >Faculty Members</a
+                                    href="/"
+                                    class="font-medium text-secondary hover:text-white duration-300"
+                                    >Facalty Members</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="./notice.html"
-                                    class="font-medium text-secondary duration-300 hover:text-white"
+                                    href="#notices"
+                                    class="font-medium text-secondary hover:text-white duration-300"
                                     >Notice</a
                                 >
                             </li>
                             <li>
                                 <a
-                                    href="./index.html#gallery"
-                                    class="font-medium text-secondary duration-300 hover:text-white"
+                                    href="/"
+                                    class="font-medium text-secondary hover:text-white duration-300"
                                     >Gallery</a
                                 >
                             </li>
                             <li>
                                 <a
                                     href="./contact.html"
-                                    class="font-medium text-secondary duration-300 hover:text-white"
-                                    >Contact Us</a
+                                    class="font-medium text-secondary hover:text-white duration-300"
+                                    >Contact us</a
                                 >
                             </li>
                         </ul>
                     </div>
                     <div class="flex flex-col gap-3">
-                        <h2 class="text-xl font-semibold">Contact Info</h2>
-                        <ul class="flex flex-col gap-2">
+                        <h2 class="text-xl font-semibold font-ador">
+                            Contact Info
+                        </h2>
+                        <ul class="flex flex-col gap-2 font-ador">
                             <li>
-                                বাড়ী নং ১২৩/২ (২য় তলা), রোড নং-০৪, ব্লক-এফ,<br
-                                    class="hidden sm:block"
-                                />শাহজালাল উপশহর, সিলেট।
+                                বাড়ী নং ১২৩/২ (২য় তলা), রোড নং-০৪,
+                                ব্লক-এফ,<br class="hidden sm:block" />
+                                শাহজালাল উপশহর, সিলেট।
                             </li>
                             <li>
-                                Email:
+                                ইমেইল:
                                 <a
                                     href="mailto:jttcsylhet99@gmail.com"
                                     class="font-medium text-secondary"
@@ -1063,15 +1062,15 @@
                                 >
                             </li>
                             <li>
-                                Mobile:
+                                মোবা:
                                 <a
                                     href="tel:+8801711345553"
                                     class="font-medium text-secondary"
-                                    >০১৭১১৩৪৫৫৩</a
+                                    >০১৭১১৩৪৫৫৫৩</a
                                 >
                             </li>
                             <li>
-                                Office:
+                                অফিস:
                                 <a
                                     href="tel:+8801712083292"
                                     class="font-medium text-secondary"
@@ -1082,10 +1081,11 @@
                     </div>
                 </div>
             </div>
-            <section class="border-t border-white bg-secondary py-2 text-black">
+            <!-- Copyright section -->
+            <section class="border-t border-white bg-secondary text-black py-2">
                 <div class="container">
                     <div class="flex items-center justify-center">
-                        <p class="text-center">
+                        <p class="text-center font-ador">
                             &copy; 2026 Jalalabad Teachers Training College ||
                             developed by
                             <a href="/" class="font-semibold text-primary"
@@ -1096,5 +1096,9 @@
                 </div>
             </section>
         </footer>
+        <!-- Footer End -->
+
+        <script src="./src/js/gallery.js"></script>
+        <script src="./src/js/header.js" defer></script>
     </body>
 </html>

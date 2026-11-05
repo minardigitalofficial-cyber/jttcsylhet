@@ -1,148 +1,322 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Browse the latest notices and announcements from Jalalabad Teacher's Training College."
-    />
-    <title>Notices | Jalalabad Teacher's Training College</title>
-    <link rel="stylesheet" href="./src/css/all.min.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
-  </head>
-  <body>
-    <header class="header bg-primary border-b border-white">
-      <div class="container mx-auto px-4 py-5">
-        <div class="flex items-center justify-between text-white text-center">
-          <h3 class="text-lg sm:text-2xl font-ador">প্রশিক্ষণ মানে,</h3>
-          <a href="./index.html" aria-label="Jalalabad Teacher's Training College home">
-            <img
-              src="./src/images/logo.jpeg"
-              class="size-20 sm:size-24"
-              alt="Jalalabad Teacher's Training College Logo"
-            />
-          </a>
-          <h3 class="text-lg sm:text-2xl font-ador">প্রকৃষ্ঠরুপে শিখন</h3>
-        </div>
-      </div>
-      <nav class="bg-secondary text-black py-3" aria-label="Main navigation">
-        <div class="container mx-auto px-4">
-          <ul
-            class="nav-links flex flex-nowrap space-x-4 sm:justify-center overflow-x-auto whitespace-nowrap"
-            style="scrollbar-width: none; -ms-overflow-style: none"
-          >
-            <li><a href="./index.html" class="hover:text-primary-dark font-medium duration-300">Home</a></li>
-            <li><a href="./about.html" class="hover:text-primary-dark font-medium duration-300">About</a></li>
-            <li><a href="./index.html#admission" class="hover:text-primary-dark font-medium duration-300">Admission</a></li>
-            <li><a href="./index.html#faculty" class="hover:text-primary-dark font-medium duration-300">Faculty Members</a></li>
-            <li><a href="./notice.html" class="hover:text-primary-dark font-medium duration-300" aria-current="page">Notice</a></li>
-            <li><a href="./index.html#gallery" class="hover:text-primary-dark font-medium duration-300">Gallery</a></li>
-            <li><a href="./contact.html" class="hover:text-primary-dark font-medium duration-300">Contact Us</a></li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-
-    <main class="min-h-[65vh] bg-[#e9f3ef] px-4 py-8 pb-16">
-      <section class="mb-7 text-center">
-        <h1 class="font-ador text-3xl font-bold leading-tight text-[#101715] sm:text-4xl">
-          Latest Announcements and Updates
-        </h1>
-        <p class="mt-3 text-gray-600">
-          Explore the most recent notices from our college, including schedules,
-          results, events, and more.
-        </p>
-        <button
-          id="refresh-notices"
-          class="mx-auto mt-3 grid size-10 place-items-center rounded-lg border border-gray-200 border-b-2 border-b-primary text-gray-700 transition hover:bg-gray-100"
-          type="button"
-          aria-label="Refresh notices"
-          title="Refresh notices"
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Browse the latest notices and announcements from Jalalabad Teacher's Training College."
+        />
+        <title>Notices | Jalalabad Teacher's Training College</title>
+        <link rel="stylesheet" href="./src/css/all.min.css" />
+        <link rel="stylesheet" href="./src/css/style.css" />
+    </head>
+    <body>
+        <header
+            class="site-header bg-primary border-b border-white sticky top-0 z-50"
         >
-          <i class="fa-solid fa-rotate-right" aria-hidden="true"></i>
-        </button>
-      </section>
+            <div class="site-header-branding container mx-auto px-4 py-5">
+                <div
+                    class="flex items-center justify-between text-white text-center"
+                >
+                    <h3 class="site-header-motto text-lg sm:text-2xl font-ador">
+                        প্রশিক্ষণ মানে,
+                    </h3>
+                    <div>
+                        <img
+                            src="./src/images/logo.jpeg"
+                            class="site-header-logo size-20 sm:size-24"
+                            alt="Jalalabad Teacher's Training College Logo"
+                        />
+                    </div>
+                    <h3 class="site-header-motto text-lg sm:text-2xl font-ador">
+                        প্রকৃষ্ঠরুপে শিখন
+                    </h3>
+                </div>
+            </div>
+            <nav class="bg-secondary text-black py-3">
+                <div class="container mx-auto px-4">
+                    <ul
+                        class="nav-links flex flex-nowrap space-x-4 sm:justify-center overflow-x-auto whitespace-nowrap"
+                        style="scrollbar-width: none; -ms-overflow-style: none"
+                    >
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-primary-dark font-medium duration-300"
+                                >Home</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./about.html"
+                                class="hover:text-primary-dark font-medium duration-300"
+                                >About</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-primary-dark font-medium duration-300"
+                                >Admission</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-primary-dark font-medium duration-300"
+                                >Faculty Members</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#notices"
+                                class="hover:text-primary-dark font-medium duration-300"
+                                >Notice</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                class="hover:text-primary-dark font-medium duration-300"
+                                >Gallery</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                href="./contact.html"
+                                class="hover:text-primary-dark font-medium duration-300"
+                                >Contact Us</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
 
-      <section class="mx-auto max-w-[1110px] rounded-xl bg-white p-4 shadow-sm sm:p-5" aria-label="College notices">
-        <div class="mb-5">
-          <div class="flex justify-end text-xs text-gray-700">
-            <label class="flex items-center gap-2">
-              <span>Show</span>
-              <select id="notice-page-size" class="min-w-20 rounded-md border border-gray-200 bg-white px-3 py-2 text-gray-900" aria-label="Notices per page">
-                <option value="10" selected>10</option>
-                <option value="20">20</option>
-                <option value="50">50</option>
-              </select>
-              <span>per page</span>
-            </label>
-          </div>
-        </div>
+        <main class="min-h-[65vh] bg-[#e9f3ef] px-4 py-8 pb-16">
+            <section class="mb-7 text-center">
+                <h1
+                    class="font-ador text-3xl font-bold leading-tight text-[#101715] sm:text-4xl"
+                >
+                    Latest Announcements and Updates
+                </h1>
+                <p class="mt-3 text-gray-600">
+                    Explore the most recent notices from our college, including
+                    schedules, results, events, and more.
+                </p>
+                <button
+                    id="refresh-notices"
+                    class="mx-auto mt-3 grid size-10 place-items-center rounded-lg border border-gray-200 border-b-2 border-b-primary text-gray-700 transition hover:bg-gray-100"
+                    type="button"
+                    aria-label="Refresh notices"
+                    title="Refresh notices"
+                >
+                    <i class="fa-solid fa-rotate-right" aria-hidden="true"></i>
+                </button>
+            </section>
 
-        <div class="overflow-x-auto">
-          <table class="w-full min-w-[660px] border-collapse text-left text-sm text-gray-900">
-            <thead>
-              <tr>
-                <th scope="col" class="w-22 border border-gray-200 bg-gray-100 px-3 py-3">SL NO.</th>
-                <th scope="col" class="border border-gray-200 bg-gray-100 px-3 py-3">Topic</th>
-                <th scope="col" class="w-31 border border-gray-200 bg-gray-100 px-3 py-3">Date</th>
-                <th scope="col" class="w-28 border border-gray-200 bg-gray-100 px-3 py-3">Action</th>
-              </tr>
-            </thead>
-            <tbody id="notice-rows"></tbody>
-          </table>
-        </div>
+            <section
+                class="mx-auto max-w-[1110px] rounded-xl bg-white p-4 shadow-sm sm:p-5"
+                aria-label="College notices"
+            >
+                <div class="mb-5">
+                    <div class="flex justify-end text-xs text-gray-700">
+                        <label class="flex items-center gap-2">
+                            <span>Show</span>
+                            <select
+                                id="notice-page-size"
+                                class="min-w-20 rounded-md border border-gray-200 bg-white px-3 py-2 text-gray-900"
+                                aria-label="Notices per page"
+                            >
+                                <option value="10" selected>10</option>
+                                <option value="20">20</option>
+                                <option value="50">50</option>
+                            </select>
+                            <span>per page</span>
+                        </label>
+                    </div>
+                </div>
 
-        <div class="mt-4 flex flex-col items-start justify-between gap-4 text-xs text-gray-700 sm:flex-row sm:items-center">
-          <p id="notice-summary" aria-live="polite"></p>
-          <nav id="notice-pages" class="flex flex-wrap items-center gap-1" aria-label="Notice pages"></nav>
-        </div>
-      </section>
-    </main>
+                <div class="overflow-x-auto">
+                    <table
+                        class="w-full min-w-[660px] border-collapse text-left text-sm text-gray-900"
+                    >
+                        <thead>
+                            <tr>
+                                <th
+                                    scope="col"
+                                    class="w-22 border border-gray-200 bg-gray-100 px-3 py-3"
+                                >
+                                    SL NO.
+                                </th>
+                                <th
+                                    scope="col"
+                                    class="border border-gray-200 bg-gray-100 px-3 py-3"
+                                >
+                                    Topic
+                                </th>
+                                <th
+                                    scope="col"
+                                    class="w-31 border border-gray-200 bg-gray-100 px-3 py-3"
+                                >
+                                    Date
+                                </th>
+                                <th
+                                    scope="col"
+                                    class="w-28 border border-gray-200 bg-gray-100 px-3 py-3"
+                                >
+                                    Action
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody id="notice-rows"></tbody>
+                    </table>
+                </div>
 
-    <footer class="bg-primary text-white">
-      <div class="container">
-        <div class="flex flex-wrap md:flex-nowrap gap-x-10 gap-y-5 md:gap-0 md:justify-between py-10">
-          <div class="flex flex-col">
-            <img src="./src/images/logo.jpeg" alt="Brand Logo" class="object-contain w-20" />
-            <p class="font-ador font-semibold text-xl mt-5">জালালাবাদ টিচার্স ট্রেনিং কলেজ</p>
-            <p>সুদক্ষ সুশিক্ষক তৈরী আমাদের লক্ষ্য।</p>
-          </div>
-          <div class="flex flex-col gap-3">
-            <h2 class="text-xl font-semibold">Useful Links</h2>
-            <ul class="flex flex-col gap-2">
-              <li><a href="./index.html" class="font-medium text-secondary hover:text-white duration-300">Home</a></li>
-              <li><a href="./about.html" class="font-medium text-secondary hover:text-white duration-300">About</a></li>
-              <li><a href="./index.html#admission" class="font-medium text-secondary hover:text-white duration-300">Admission</a></li>
-              <li><a href="./index.html#faculty" class="font-medium text-secondary hover:text-white duration-300">Faculty Members</a></li>
-              <li><a href="./notice.html" class="font-medium text-secondary hover:text-white duration-300">Notice</a></li>
-              <li><a href="./index.html#gallery" class="font-medium text-secondary hover:text-white duration-300">Gallery</a></li>
-              <li><a href="./contact.html" class="font-medium text-secondary hover:text-white duration-300">Contact us</a></li>
-            </ul>
-          </div>
-          <div class="flex flex-col gap-3">
-            <h2 class="text-xl font-semibold">Contact Info</h2>
-            <ul class="flex flex-col gap-2">
-              <li>বাড়ী নং ১২৩/২ (২য় তলা), রোড নং-০৪, ব্লক-এফ,<br class="hidden sm:block" />শাহজালাল উপশহর, সিলেট।</li>
-              <li>ইমেইল: <a href="mailto:jttcsylhet99@gmail.com" class="font-medium text-secondary">jttcsylhet99@gmail.com</a></li>
-              <li>মোবা: <a href="tel:+8801711345553" class="font-medium text-secondary">০১৭১১৩৪৫৫৩</a></li>
-              <li>অফিস: <a href="tel:+8801712083292" class="font-medium text-secondary">০১৭১২-০৮৩২৯২</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <section class="border-t border-white bg-secondary text-black py-2">
-        <div class="container">
-          <div class="flex items-center justify-center">
-            <p class="text-center">
-              &copy; 2026 Jalalabad Teachers Training College || developed by
-              <a href="/" class="font-semibold text-primary">Minar IT</a>
-            </p>
-          </div>
-        </div>
-      </section>
-    </footer>
-    <script src="./src/content/notice.js"></script>
-    <script src="./src/js/notices.js"></script>
-  </body>
+                <div
+                    class="mt-4 flex flex-col items-start justify-between gap-4 text-xs text-gray-700 sm:flex-row sm:items-center"
+                >
+                    <p id="notice-summary" aria-live="polite"></p>
+                    <nav
+                        id="notice-pages"
+                        class="flex flex-wrap items-center gap-1"
+                        aria-label="Notice pages"
+                    ></nav>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer Start -->
+        <footer class="bg-primary text-white">
+            <div class="container">
+                <div
+                    class="flex flex-wrap md:flex-nowrap gap-x-10 gap-y-5 md:gap-0 md:justify-between py-10"
+                >
+                    <div class="flex flex-col font-ador">
+                        <img
+                            src="./src/images/logo.jpeg"
+                            alt="Brand Logo"
+                            class="object-fill size-20"
+                        />
+                        <p class="font-semibold text-xl mt-5">
+                            জালালাবাদ টিচার্স ট্রেনিং কলেজ
+                        </p>
+                        <p>সুদক্ষ সুশিক্ষক তৈরী আমাদের লক্ষ্য।</p>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-xl font-semibold font-ador">
+                            Useful Links
+                        </h2>
+                        <ul class="flex flex-col gap-2">
+                            <li>
+                                <a
+                                    href="/"
+                                    class="font-medium text-secondary hover:text-white duration-300"
+                                    >Home</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/about.html"
+                                    class="font-medium text-secondary hover:text-white duration-300"
+                                    >About</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/"
+                                    class="font-medium text-secondary hover:text-white duration-300"
+                                    >Admission</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/"
+                                    class="font-medium text-secondary hover:text-white duration-300"
+                                    >Facalty Members</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#notices"
+                                    class="font-medium text-secondary hover:text-white duration-300"
+                                    >Notice</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="/"
+                                    class="font-medium text-secondary hover:text-white duration-300"
+                                    >Gallery</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="./contact.html"
+                                    class="font-medium text-secondary hover:text-white duration-300"
+                                    >Contact us</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="flex flex-col gap-3">
+                        <h2 class="text-xl font-semibold font-ador">
+                            Contact Info
+                        </h2>
+                        <ul class="flex flex-col gap-2 font-ador">
+                            <li>
+                                বাড়ী নং ১২৩/২ (২য় তলা), রোড নং-০৪,
+                                ব্লক-এফ,<br class="hidden sm:block" />
+                                শাহজালাল উপশহর, সিলেট।
+                            </li>
+                            <li>
+                                ইমেইল:
+                                <a
+                                    href="mailto:jttcsylhet99@gmail.com"
+                                    class="font-medium text-secondary"
+                                    >jttcsylhet99@gmail.com</a
+                                >
+                            </li>
+                            <li>
+                                মোবা:
+                                <a
+                                    href="tel:+8801711345553"
+                                    class="font-medium text-secondary"
+                                    >০১৭১১৩৪৫৫৫৩</a
+                                >
+                            </li>
+                            <li>
+                                অফিস:
+                                <a
+                                    href="tel:+8801712083292"
+                                    class="font-medium text-secondary"
+                                    >০১৭১২-০৮৩২৯২</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright section -->
+            <section class="border-t border-white bg-secondary text-black py-2">
+                <div class="container">
+                    <div class="flex items-center justify-center">
+                        <p class="text-center font-ador">
+                            &copy; 2026 Jalalabad Teachers Training College ||
+                            developed by
+                            <a href="/" class="font-semibold text-primary"
+                                >Minar IT</a
+                            >
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </footer>
+        <!-- Footer End -->
+
+        <script src="./src/js/header.js" defer></script>
+        <script src="./src/content/notice.js"></script>
+        <script src="./src/js/notices.js"></script>
+    </body>
 </html>

@@ -79,6 +79,52 @@ a {
   margin-inline: auto;
 }
 
+.site-header-scroll-sentinel {
+  height: 1px;
+  margin-bottom: -1px;
+}
+
+.site-header-branding {
+  transition: padding 220ms ease;
+}
+
+.site-header-logo {
+  transition:
+    width 220ms ease,
+    height 220ms ease;
+}
+
+.site-header-motto {
+  transition: font-size 220ms ease;
+}
+
+.site-header.is-shrunk .site-header-branding {
+  padding-block: 0.4rem;
+}
+
+.site-header.is-shrunk .site-header-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.site-header.is-shrunk .site-header-motto {
+  font-size: 1rem;
+}
+
+@media (min-width: 640px) {
+  .site-header.is-shrunk .site-header-motto {
+    font-size: 1.125rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header-branding,
+  .site-header-logo,
+  .site-header-motto {
+    transition: none;
+  }
+}
+
 .notice-marquee-window {
   mask-image: linear-gradient(
     to right,
